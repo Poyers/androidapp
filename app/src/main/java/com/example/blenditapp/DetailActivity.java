@@ -82,7 +82,7 @@ public class DetailActivity extends AppCompatActivity {
         p.setPhone(txtPhone.getText().toString());
         p.setAddress(txtAddress.getText().toString());
 
-        if(p.getId() != 0){
+        if(p.getId() != -1){
             dao.update(p);
         }else{
             dao.insert(p);

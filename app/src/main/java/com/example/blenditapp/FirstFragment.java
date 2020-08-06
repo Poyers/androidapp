@@ -78,7 +78,7 @@ public class FirstFragment extends Fragment {
                 Intent it = new Intent(view.getContext(), DetailActivity.class);
                 PersonEntity p = new PersonEntity();
                 Bundle params = new Bundle();
-                params.putInt("id", 0);
+                params.putInt("id", -1);
                 it.putExtras(params);
                 startActivity(it);
             }
